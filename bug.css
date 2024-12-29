@@ -1,0 +1,13 @@
+The following CSS code snippet demonstrates an uncommon error related to the specificity of CSS selectors:
+
+```css
+div p {
+  color: blue;
+}
+
+p {
+  color: red;
+}
+```
+
+In this example, both selectors target the same element, a paragraph (`p`) element within a `div` element.  The first selector (`div p`) is more specific because it targets paragraphs that are specifically inside a `div`.  However, unexpected behavior might arise if the element structure changes or if other, even more specific selectors, are involved.
